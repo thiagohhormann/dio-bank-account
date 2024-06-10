@@ -15,23 +15,23 @@ balance = 0.0
 transaction_history = ()
 
 
-def create_transaction(transaction_type, value):
-    history = ()
+# def create_transaction(transaction_type, value):
+#     history = ()
     
-    if transaction_type not in ["d", "w"]:
-        raise ValueError("Transaction type must be [d]eposit or [w]ithdrawal")
+#     if transaction_type not in ["d", "w"]:
+#         raise ValueError("Transaction type must be [d]eposit or [w]ithdrawal")
     
-    transaction_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+#     transaction_time = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
 
-    history += ((transaction_type, value, transaction_time),)
-    return history
+#     history += ((transaction_type, value, transaction_time),)
+#     return history
 
 
 # def deposit(value):
 #     create_transaction("d", value)
-#     balance += value
-#     return balance
-    
+#     g balance + value
+
+
 # def withdraw(value):
 #     global balance
 
@@ -49,20 +49,20 @@ Extrato:
     - Exibir total da conta
 """
 
-# while True:
-    # user_input = input(menu)
-
-    # match user_input:
-        # case 'd': 
-        #     amount = float(input("Amount: "))
-        #     deposit(amount)
-            
-        # case 'w':
-        #     amount = input("Amount: ")
-        #     withdrawal(amount) 
-            
-        # case 'e':
-        #     print('extrato') ls
-        
-        # case 'q':
-        #     print('sair') 
+while True:
+    user_input = input(menu)
+# 
+    match user_input:
+        case 'd': 
+            amount = float(input("Amount: "))
+            deposit(amount)
+            # 
+        case 'w':
+            amount = input("Amount: ")
+            withdrawal(amount) 
+            # 
+        case 'e':
+            print('extrato') ls
+        # 
+        case 'q':
+            print('sair') 
