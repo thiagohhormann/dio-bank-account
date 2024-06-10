@@ -83,3 +83,6 @@ while True:
         case "q":
             print("Exiting program...")
             break
+
+        case _:
+            print("Invalid option")
